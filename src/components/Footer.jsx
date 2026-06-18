@@ -1,4 +1,5 @@
 import { MessageSquare, ArrowUp, Heart } from 'lucide-react';
+import logoImg from '../assets/logo.jpg';
 
 const GithubIcon = (props) => (
   <svg viewBox="0 0 24 24" className={props.className} fill="currentColor">
@@ -56,10 +57,12 @@ const Footer = () => {
           {/* Brand Info Column */}
           <div className="lg:col-span-5 flex flex-col items-start gap-4">
             <a href="#home" onClick={(e) => handleScrollTo(e, 'home')} className="flex items-center gap-2 group">
-              <div className="relative flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-tr from-[#7C3AED] to-[#06B6D4] p-[1px]">
-                <div className="flex h-full w-full items-center justify-center rounded-lg bg-neutral-950">
-                  <span className="font-heading text-sm font-bold text-white">D</span>
-                </div>
+              <div className="relative flex h-8 w-8 items-center justify-center rounded-lg overflow-hidden border border-white/10 group-hover:border-[#7C3AED] transition-colors">
+                <img 
+                  src={logoImg} 
+                  alt="DesignLoop Logo" 
+                  className="absolute h-[160%] w-[160%] max-w-none object-cover object-[center_38%]"
+                />
               </div>
               <span className="font-heading text-lg font-extrabold text-white">
                 Design<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7C3AED] to-[#06B6D4]">Loop</span>

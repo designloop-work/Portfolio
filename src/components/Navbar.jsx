@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
+import logoImg from '../assets/logo.jpg';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -73,10 +74,12 @@ const Navbar = () => {
       <div className="mx-auto max-w-7xl px-6 md:px-12 flex items-center justify-between">
         {/* Brand Logo */}
         <a href="#home" onClick={(e) => handleLinkClick(e, '#home')} className="flex items-center gap-2 group">
-          <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-[#7C3AED] to-[#06B6D4] p-[1.5px] transition-transform duration-300 group-hover:scale-105">
-            <div className="flex h-full w-full items-center justify-center rounded-xl bg-[#0B0B0B]">
-              <span className="font-heading text-lg font-bold text-white">D</span>
-            </div>
+          <div className="relative flex h-10 w-10 items-center justify-center rounded-xl overflow-hidden border border-white/10 transition-transform duration-300 group-hover:scale-105">
+            <img 
+              src={logoImg} 
+              alt="DesignLoop Logo" 
+              className="absolute h-[160%] w-[160%] max-w-none object-cover object-[center_38%]"
+            />
           </div>
           <span className="font-heading text-xl font-extrabold tracking-tight text-white transition-colors group-hover:text-white">
             Design<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7C3AED] to-[#06B6D4]">Loop</span>
