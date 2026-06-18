@@ -71,7 +71,7 @@ const Footer = () => {
             </p>
 
             <div className="mt-4 text-xs font-semibold text-neutral-500">
-              EMAIL CHANNEL: <a href="mailto:hello@designloop.io" className="text-white hover:text-[#06B6D4] transition-colors ml-1">hello@designloop.io</a>
+              EMAIL CHANNEL: <a href="mailto:designloop.work@gmail.com" className="text-white hover:text-[#06B6D4] transition-colors ml-1">designloop.work@gmail.com</a>
             </div>
           </div>
 

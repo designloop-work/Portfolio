@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Send, CheckCircle2, ShieldCheck, Mail, Building2, DollarSign } from 'lucide-react';
+import { Send, CheckCircle2, ShieldCheck, Mail, Building2 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 const Contact = () => {
@@ -32,7 +32,7 @@ const Contact = () => {
     setFormState((prev) => ({ ...prev, budget: val }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setErrorMsg('');
 
@@ -44,19 +44,54 @@ const Contact = () => {
 
     setIsSubmitting(true);
 
-    // Mock API Call delay
-    setTimeout(() => {
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+    if (!accessKey || accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY') {
       setIsSubmitting(false);
-      setIsSubmitted(true);
-      
-      // Fire confetti explosion
-      confetti({
-        particleCount: 120,
-        spread: 70,
-        origin: { y: 0.6 },
-        colors: ['#7C3AED', '#06B6D4', '#ffffff']
+      setErrorMsg('Web3Forms Access Key is not configured. Please add your key to the .env file.');
+      return;
+    }
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: 'New Client Inquiry - DesignLoop Portfolio',
+          from_name: 'DesignLoop Contact Form',
+          name: formState.name,
+          email: formState.email,
+          company: formState.company || 'N/A',
+          budget: formState.budget,
+          message: formState.details
+        })
       });
-    }, 1200);
+
+      const data = await response.json();
+
+      if (data.success) {
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+        
+        // Fire confetti explosion
+        confetti({
+          particleCount: 120,
+          spread: 70,
+          origin: { y: 0.6 },
+          colors: ['#7C3AED', '#06B6D4', '#ffffff']
+        });
+      } else {
+        setIsSubmitting(false);
+        setErrorMsg(data.message || 'Submission failed. Please try again.');
+      }
+    } catch (err) {
+      setIsSubmitting(false);
+      setErrorMsg('Network error. Please try again later.');
+      console.error('Submission error:', err);
+    }
   };
 
   return (
@@ -107,8 +142,8 @@ const Contact = () => {
 
             <div className="mt-10 pt-8 border-t border-white/5">
               <div className="text-xs uppercase tracking-widest text-neutral-500 font-bold mb-2">Direct Channel</div>
-              <a href="mailto:hello@designloop.io" className="font-heading text-lg font-bold text-white hover:text-[#06B6D4] transition-colors">
-                hello@designloop.io
+              <a href="mailto:designloop.work@gmail.com" className="font-heading text-lg font-bold text-white hover:text-[#06B6D4] transition-colors">
+                designloop.work@gmail.com
               </a>
             </div>
           </div>
