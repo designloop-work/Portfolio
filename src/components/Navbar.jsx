@@ -78,7 +78,7 @@ const Navbar = () => {
             <img 
               src={logoImg} 
               alt="DesignLoop Logo" 
-              className="absolute h-[160%] w-[160%] max-w-none object-cover object-[center_38%]"
+              className="absolute h-[200%] w-[200%] max-w-none object-cover object-[center_25%]"
             />
           </div>
           <span className="font-heading text-xl font-extrabold tracking-tight text-white transition-colors group-hover:text-white">
