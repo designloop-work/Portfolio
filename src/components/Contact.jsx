@@ -44,11 +44,10 @@ const Contact = () => {
 
     setIsSubmitting(true);
 
-    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+    let accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
     if (!accessKey || accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY') {
-      setIsSubmitting(false);
-      setErrorMsg('Web3Forms Access Key is not configured. Please add your key to the .env file.');
-      return;
+      // Fallback to the public Web3Forms access key
+      accessKey = 'ddb7747f-94dc-4fc2-b434-de0dd0e2d0a8';
     }
 
     try {
