@@ -51,8 +51,8 @@ const LoadingScreen = ({ onComplete }) => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-8 flex justify-center"
         >
-          <div className="relative flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#7C3AED] to-[#06B6D4] p-[2px]">
-            <div className="flex h-full w-full items-center justify-center rounded-2xl bg-[#0B0B0B] overflow-hidden">
+          <div className="relative flex h-28 w-28 items-center justify-center rounded-3xl bg-gradient-to-tr from-[#7C3AED] to-[#06B6D4] p-[2px]">
+            <div className="flex h-full w-full items-center justify-center rounded-3xl bg-[#0B0B0B] overflow-hidden">
               <img 
                 src={logoImg} 
                 alt="DesignLoop Logo" 
@@ -60,7 +60,7 @@ const LoadingScreen = ({ onComplete }) => {
               />
             </div>
             {/* Soft Ambient Glow */}
-            <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-tr from-[#7C3AED] to-[#06B6D4] opacity-40 blur-xl"></div>
+            <div className="absolute inset-0 -z-10 rounded-3xl bg-gradient-to-tr from-[#7C3AED] to-[#06B6D4] opacity-40 blur-xl"></div>
           </div>
         </motion.div>
 
