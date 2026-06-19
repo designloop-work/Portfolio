@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logoImg from '../assets/logo.jpg';
 
 const LoadingScreen = ({ onComplete }) => {
   const [progress, setProgress] = useState(0);
@@ -51,8 +52,12 @@ const LoadingScreen = ({ onComplete }) => {
           className="mb-8 flex justify-center"
         >
           <div className="relative flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#7C3AED] to-[#06B6D4] p-[2px]">
-            <div className="flex h-full w-full items-center justify-center rounded-2xl bg-[#0B0B0B]">
-              <span className="font-heading text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#7C3AED] to-[#06B6D4]">DL</span>
+            <div className="flex h-full w-full items-center justify-center rounded-2xl bg-[#0B0B0B] overflow-hidden">
+              <img 
+                src={logoImg} 
+                alt="DesignLoop Logo" 
+                className="h-[160%] w-[160%] max-w-none object-cover object-[center_38%]"
+              />
             </div>
             {/* Soft Ambient Glow */}
             <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-tr from-[#7C3AED] to-[#06B6D4] opacity-40 blur-xl"></div>
