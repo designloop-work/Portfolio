@@ -1,89 +1,9 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { AlertTriangle, CheckCircle, TrendingUp, Cpu, Server, Database } from 'lucide-react';
+import { caseStudiesData } from '../data/projectsData';
 
 const CaseStudies = ({ selectedId, setSelectedId }) => {
-  const caseStudiesData = {
-    restaurant: {
-      title: "Restaurant Management System",
-      client: "Gourmet Group Ltd",
-      duration: "10 Weeks",
-      problem: "A high-volume restaurant franchise faced severe delays in routing orders to the kitchen, leading to 15-minute prep lag times, high table turnover times, and lost billing items.",
-      solution: "We engineered a real-time order dispatcher utilizing WebSockets. Waitstaff take orders on tablets, which are instantly pushed to kitchen displays. We backed the app with PostgreSQL transactions to prevent billing errors.",
-      technologies: ["React.js", "Node.js", "PostgreSQL", "Socket.io", "Tailwind CSS"],
-      metrics: [
-        { label: "Order Prep Speed", value: "+30%", desc: "Faster fulfillment" },
-        { label: "Table Idle Time", value: "-18%", desc: "Increased turnover" },
-        { label: "Recaptured Billing", value: "12%", desc: "Direct revenue growth" }
-      ]
-    },
-    crm: {
-      title: "AI CRM Platform",
-      client: "VentureScale Inc",
-      duration: "12 Weeks",
-      problem: "Sales representatives were spending up to 3 hours per day manually writing conversation logs, summarizing zoom logs, and scoring potential leads.",
-      solution: "We designed an automated LLM parsing worker. Our backend scans email chains and transcriptions, creates context vectors, and auto-generates custom drafts and customer scores.",
-      technologies: ["Next.js", "FastAPI", "MongoDB", "OpenAI API", "LlamaIndex"],
-      metrics: [
-        { label: "Time Saved", value: "14h", desc: "Per agent / week" },
-        { label: "Lead Engagement", value: "+38%", desc: "Through fast replies" },
-        { label: "Deal Closure Rate", value: "+22%", desc: "Increase in revenue" }
-      ]
-    },
-    saas: {
-      title: "SaaS Subscription Dashboard",
-      client: "CloudPulse Systems",
-      duration: "8 Weeks",
-      problem: "The client was losing 8% of annual revenue to failed card retries, had no reporting system for monthly MRR expansion, and handled renewals manually.",
-      solution: "We developed a multi-tenant billing console using Stripe APIs. It tracks billing metadata, auto-fires customized dunning emails, and feeds a detailed financial reporting console.",
-      technologies: ["React.js", "Express", "Stripe API", "Chart.js", "Tailwind CSS"],
-      metrics: [
-        { label: "Failed Card Churn", value: "-75%", desc: "Recovered subscriptions" },
-        { label: "Accounting Overhead", value: "-20h", desc: "Saved monthly" },
-        { label: "Expansion MRR", value: "+14%", desc: "Through upgrade paths" }
-      ]
-    },
-    gym: {
-      title: "Gym Management System",
-      client: "IronPulse Fitness",
-      duration: "6 Weeks",
-      problem: "The client suffered from check-in queues at peak hours, manual schedule conflicts, and a high volume of membership cancellations.",
-      solution: "We built an interactive portal linking NFC keycard hardware to a high-speed Express socket server. Added a digital calendar booking system for trainers and automated billing retries.",
-      technologies: ["React.js", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
-      metrics: [
-        { label: "Peak Check-in Queue", value: "0s", desc: "Completely automated" },
-        { label: "Member Retention", value: "+28%", desc: "Via mobile scheduling" },
-        { label: "Admin Billing Effort", value: "-95%", desc: "No manual inputs" }
-      ]
-    },
-    realestate: {
-      title: "Real Estate Platform",
-      client: "Apex Brokers",
-      duration: "14 Weeks",
-      problem: "Traditional listing boards loaded slowly (over 4s), resulting in short user sessions (under 45s) and poor listing lead generation.",
-      solution: "We implemented Next.js static generation combined with Mapbox spatial clustering. Database queries are optimized with PostgreSQL PostGIS spatial indexes to deliver sub-150ms search speeds.",
-      technologies: ["Next.js", "PostgreSQL", "Mapbox SDK", "Docker", "AWS S3"],
-      metrics: [
-        { label: "User Session Time", value: "+210%", desc: "Higher engagement" },
-        { label: "Lead Conversion", value: "+40%", desc: "Direct listing calls" },
-        { label: "Page Load Speed", value: "<150ms", desc: "Highly optimized" }
-      ]
-    },
-    resume: {
-      title: "AI Resume Builder",
-      client: "CareerJump SaaS",
-      duration: "9 Weeks",
-      problem: "Job applicants were receiving minimal callbacks because their resumes were not optimized for Applicant Tracking Systems (ATS).",
-      solution: "We engineered an interactive editor that compares resumes against target job descriptions. An LLM analyzer suggestions bullet adjustments and formats PDFs on the fly.",
-      technologies: ["React.js", "FastAPI", "OpenAI API", "Tailwind CSS", "jsPDF"],
-      metrics: [
-        { label: "ATS Pass Rate", value: "+85%", desc: "Higher resume scores" },
-        { label: "Interview Invitations", value: "2.5x", desc: "Increase in callouts" },
-        { label: "Document Generation", value: "150k+", desc: "Resumes made" }
-      ]
-    }
-  };
-
   const tabs = Object.keys(caseStudiesData);
 
   // If selectedId from parent changes, sync it here

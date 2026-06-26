@@ -7,71 +7,9 @@ const GithubIcon = (props) => (
   </svg>
 );
 
-// Mockup image imports
-import restaurantImg from '../assets/restaurant_mockup.png';
-import crmImg from '../assets/crm_mockup.png';
-import saasImg from '../assets/saas_mockup.png';
-import gymImg from '../assets/gym_mockup.png';
-import realEstateImg from '../assets/real_estate_mockup.png';
-import resumeImg from '../assets/resume_mockup.png';
+import { projects } from '../data/projectsData';
 
 const Portfolio = ({ onSelectCaseStudy }) => {
-  const projects = [
-    {
-      id: "restaurant",
-      name: "Restaurant Management System",
-      description: "A real-time order-tracking, seating management, and analytics dashboard engineered for high-volume dining locations.",
-      image: restaurantImg,
-      tags: ["React.js", "Node.js", "PostgreSQL", "Socket.io"],
-      demoUrl: "#",
-      gitUrl: "#"
-    },
-    {
-      id: "crm",
-      name: "AI CRM Platform",
-      description: "Customer relationship manager featuring automatic lead scoring, email synthesis, and meeting transcript summarization using LLMs.",
-      image: crmImg,
-      tags: ["Next.js", "FastAPI", "MongoDB", "LlamaIndex"],
-      demoUrl: "#",
-      gitUrl: "#"
-    },
-    {
-      id: "saas",
-      name: "SaaS Subscription Dashboard",
-      description: "A subscription engine featuring multi-tenant isolation, automated invoice generation, and deep subscription metrics.",
-      image: saasImg,
-      tags: ["React.js", "Tailwind CSS", "Stripe API", "Chart.js"],
-      demoUrl: "#",
-      gitUrl: "#"
-    },
-    {
-      id: "gym",
-      name: "Gym Management System",
-      description: "A member portal and administrative application supporting automatic keycard check-ins, subscription billing, and training timetables.",
-      image: gymImg,
-      tags: ["React.js", "Node.js", "MongoDB", "Express"],
-      demoUrl: "#",
-      gitUrl: "#"
-    },
-    {
-      id: "realestate",
-      name: "Real Estate Platform",
-      description: "A property marketplace with interactive maps, automated valuation models (AVM), and secure digital transaction escrow trackers.",
-      image: realEstateImg,
-      tags: ["Next.js", "PostgreSQL", "Docker", "Mapbox SDK"],
-      demoUrl: "#",
-      gitUrl: "#"
-    },
-    {
-      id: "resume",
-      name: "AI Resume Builder",
-      description: "Intelligent document compiler that tracks resume strength against specific job descriptions and rewrites bullets with AI guidance.",
-      image: resumeImg,
-      tags: ["React.js", "FastAPI", "OpenAI API", "Tailwind"],
-      demoUrl: "#",
-      gitUrl: "#"
-    }
-  ];
 
   const handleCaseStudyClick = (id) => {
     if (onSelectCaseStudy) {
