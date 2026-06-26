@@ -34,7 +34,7 @@ export const projects = [
       "A premium luxury restaurant showcase website featuring an immersive dining experience, elegant storytelling, online table reservations, signature menu presentation, event booking, and a modern hospitality-inspired user interface.",
     image: crmImg,
     tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "GSAP"],
-    demoUrl: "https://royal-spice-house.vercel.app/",
+    demoUrl: "https://preview-restaurantweb.netlify.app",
     gitUrl: "https://github.com/designloop-work/Preview-Restaurant",
     caseStudy: {
       client: "Royal Spice House",
