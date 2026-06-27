@@ -1,6 +1,5 @@
-import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { AlertTriangle, CheckCircle, TrendingUp, Cpu, Server, Database } from 'lucide-react';
+import { AlertTriangle, CheckCircle } from 'lucide-react';
 import { caseStudiesData } from '../data/projectsData';
 
 const CaseStudies = ({ selectedId, setSelectedId }) => {

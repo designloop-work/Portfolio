@@ -1,6 +1,5 @@
 import restaurantImg from '../assets/restaurant_mockup.png';
 import crmImg from '../assets/crm_mockup.png';
-import saasImg from '../assets/saas_mockup.png';
 import gymImg from '../assets/gym_mockup.png';
 import realEstateImg from '../assets/real_estate_mockup.png';
 import resumeImg from '../assets/resume_mockup.png';
@@ -8,14 +7,14 @@ import resumeImg from '../assets/resume_mockup.png';
 export const projects = [
   {
     id: "restaurant",
-    name: "Restaurant Management System",
-    description: "A real-time order-tracking, seating management, and analytics dashboard engineered for high-volume dining locations.",
+    name: "POS Cafe System",
+    description: "A real-time order-tracking, table management, and sales analytics POS system engineered for high-volume cafe and dining locations.",
     image: restaurantImg,
     tags: ["React.js", "Node.js", "PostgreSQL", "Socket.io"],
     demoUrl: "https://pos-cafe-s.netlify.app",
     gitUrl: "https://github.com/designloop-work/Cafe-POS",
     caseStudy: {
-      client: "Gourmet Group Ltd",
+      client: "POS Cafe",
       duration: "10 Weeks",
       problem: "A high-volume restaurant franchise faced severe delays in routing orders to the kitchen, leading to 15-minute prep lag times, high table turnover times, and lost billing items.",
       solution: "We engineered a real-time order dispatcher utilizing WebSockets. Waitstaff take orders on tablets, which are instantly pushed to kitchen displays. We backed the app with PostgreSQL transactions to prevent billing errors.",
@@ -57,44 +56,23 @@ export const projects = [
     }
   },
   {
-    id: "saas",
-    name: "SaaS Subscription Dashboard",
-    description: "A subscription engine featuring multi-tenant isolation, automated invoice generation, and deep subscription metrics.",
-    image: saasImg,
-    tags: ["React.js", "Tailwind CSS", "Stripe API", "Chart.js"],
-    demoUrl: "#",
-    gitUrl: "#",
-    caseStudy: {
-      client: "CloudPulse Systems",
-      duration: "8 Weeks",
-      problem: "The client was losing 8% of annual revenue to failed card retries, had no reporting system for monthly MRR expansion, and handled renewals manually.",
-      solution: "We developed a multi-tenant billing console using Stripe APIs. It tracks billing metadata, auto-fires customized dunning emails, and feeds a detailed financial reporting console.",
-      technologies: ["React.js", "Express", "Stripe API", "Chart.js", "Tailwind CSS"],
-      metrics: [
-        { label: "Failed Card Churn", value: "-75%", desc: "Recovered subscriptions" },
-        { label: "Accounting Overhead", value: "-20h", desc: "Saved monthly" },
-        { label: "Expansion MRR", value: "+14%", desc: "Through upgrade paths" }
-      ]
-    }
-  },
-  {
     id: "gym",
-    name: "Gym Management System",
-    description: "A member portal and administrative application supporting automatic keycard check-ins, subscription billing, and training timetables.",
+    name: "SFW The Gym",
+    description: "A premium fitness platform featuring an on-demand HD exercise library, trainer booking, multi-branch scheduling, and progress tracking.",
     image: gymImg,
     tags: ["React.js", "Node.js", "MongoDB", "Express"],
-    demoUrl: "#",
+    demoUrl: "https://zenith-fit-digital.lovable.app",
     gitUrl: "#",
     caseStudy: {
-      client: "IronPulse Fitness",
+      client: "SFW The Gym",
       duration: "6 Weeks",
-      problem: "The client suffered from check-in queues at peak hours, manual schedule conflicts, and a high volume of membership cancellations.",
-      solution: "We built an interactive portal linking NFC keycard hardware to a high-speed Express socket server. Added a digital calendar booking system for trainers and automated billing retries.",
-      technologies: ["React.js", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+      problem: "The gym needed to digitize its offering to compete with online platforms, providing members with a high-quality exercise library, coach directory, and personal progress logs.",
+      solution: "We engineered a modern responsive web application with a search-optimized HD video exercise library, interactive trainer schedules, and personalized progress dashboard.",
+      technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion"],
       metrics: [
-        { label: "Peak Check-in Queue", value: "0s", desc: "Completely automated" },
-        { label: "Member Retention", value: "+28%", desc: "Via mobile scheduling" },
-        { label: "Admin Billing Effort", value: "-95%", desc: "No manual inputs" }
+        { label: "Active Members", value: "1,400+", desc: "Enrolled athletes" },
+        { label: "Video Library", value: "100+", desc: "HD form demonstrations" },
+        { label: "Member Retention", value: "+35%", desc: "Via digital tracking tools" }
       ]
     }
   },

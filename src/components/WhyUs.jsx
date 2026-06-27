@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ShieldAlert, ShieldCheck, Check, Sparkles } from 'lucide-react';
+import { ShieldAlert, ShieldCheck } from 'lucide-react';
 
 const WhyUs = () => {
   const comparisonData = [

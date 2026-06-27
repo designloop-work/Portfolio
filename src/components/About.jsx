@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Target, Eye, Compass, Zap, Shield, Sparkles } from 'lucide-react';
+import { Target, Eye, Compass, Sparkles } from 'lucide-react';
 
 const AnimatedCounter = ({ value, duration = 1.5, suffix = "" }) => {
   const [count, setCount] = useState(0);
@@ -40,7 +40,6 @@ const AnimatedCounter = ({ value, duration = 1.5, suffix = "" }) => {
 
 const About = () => {
   const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { once: true, margin: "-100px" });
 
   const stats = [
     { label: "Projects Delivered", value: "120", suffix: "+" },
@@ -134,7 +133,7 @@ const About = () => {
           <div className="absolute inset-0 bg-gradient-to-tr from-[#7C3AED]/5 to-[#06B6D4]/5 opacity-30"></div>
           
           <div className="relative z-10 grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-            {stats.map((stat, idx) => (
+            {stats.map((stat) => (
               <div key={stat.label} className="text-center md:text-left">
                 <div className="font-heading text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-400 mb-2">
                   <AnimatedCounter value={stat.value} suffix={stat.suffix} />
