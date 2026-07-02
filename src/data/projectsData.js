@@ -127,8 +127,8 @@ export const projects = [
       "A premium dental clinic management platform featuring appointment scheduling, receptionist dashboard, patient records, billing system, and responsive healthcare-focused UI.",
     image: dentalImg,
     tags: ["React.js", "Vite", "Tailwind CSS", "Framer Motion", "React Hook Form", "LocalStorage"],
-    demoUrl: "#",
-    gitUrl: "#",
+    demoUrl: "https://denalclinic-preview.vercel.app",
+    gitUrl: "https://github.com/designloop-work/denalclinic-preview",
     caseStudy: {
       client: "NovaDent Dental Care",
       duration: "8 Weeks",
