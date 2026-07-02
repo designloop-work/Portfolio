@@ -2,6 +2,7 @@ import restaurantImg from '../assets/cafepos.png';
 import crmImg from '../assets/restaurant.png';
 import gymImg from '../assets/gym.png';
 import realEstateImg from '../assets/pg.png';
+import dentalImg from '../assets/dentalImg';
 import resumeImg from '../assets/resume_mockup.png';
 
 export const projects = [
@@ -116,6 +117,33 @@ export const projects = [
         { label: "ATS Pass Rate", value: "+85%", desc: "Higher resume scores" },
         { label: "Interview Invitations", value: "2.5x", desc: "Increase in callouts" },
         { label: "Document Generation", value: "150k+", desc: "Resumes made" }
+      ]
+    }
+  },
+  {
+    id: "dental-clinic",
+    name: "NovaDent Dental Clinic",
+    description:
+      "A premium dental clinic management platform featuring appointment scheduling, receptionist dashboard, patient records, billing system, and responsive healthcare-focused UI.",
+    image: dentalImg,
+    tags: ["React.js", "Vite", "Tailwind CSS", "Framer Motion", "React Hook Form", "LocalStorage"],
+    demoUrl: "#",
+    gitUrl: "#",
+    caseStudy: {
+      client: "NovaDent Dental Care",
+      duration: "8 Weeks",
+      problem:
+        "The clinic relied on manual appointment booking and paper-based patient records, causing scheduling conflicts, billing delays, and inefficient receptionist workflows.",
+
+      solution:
+        "Designed and developed a modern frontend-only dental clinic management system with an elegant patient experience. The platform includes online appointment booking, a receptionist dashboard, patient management, billing & invoice generation, treatment tracking, and responsive UI powered by localStorage for seamless offline demonstrations.",
+
+      technologies: ["React.js", "Vite", "Tailwind CSS", "Framer Motion", "React Hook Form", "Recharts", "React Router", "LocalStorage"],
+
+      metrics: [
+        { label: "Appointments Managed", value: "10k+", desc: "Demo patient bookings" },
+        { label: "Billing Time", value: "-65%", desc: "Faster invoice generation" },
+        { label: "Reception Efficiency", value: "+90%", desc: "Streamlined patient workflow" }
       ]
     }
   }
