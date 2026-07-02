@@ -2,7 +2,7 @@ import restaurantImg from '../assets/cafepos.png';
 import crmImg from '../assets/restaurant.png';
 import gymImg from '../assets/gym.png';
 import realEstateImg from '../assets/pg.png';
-import dentalImg from '../assets/dental.jpeg';
+import dentalImg from '../assets/dental.png';
 import resumeImg from '../assets/resume_mockup.png';
 
 export const projects = [
