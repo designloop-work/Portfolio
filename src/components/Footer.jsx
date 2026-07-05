@@ -1,4 +1,4 @@
-import { MessageSquare, ArrowUp, Heart } from 'lucide-react';
+import { MessageSquare, ArrowUp } from 'lucide-react';
 import logoImg from '../assets/logo.jpg';
 
 const GithubIcon = (props) => (
@@ -61,7 +61,7 @@ const Footer = () => {
                 <img 
                   src={logoImg} 
                   alt="DesignLoop Logo" 
-                  className="absolute h-[160%] w-[160%] max-w-none object-cover object-[center_38%]"
+                  className="h-full w-full object-cover"
                 />
               </div>
               <span className="font-heading text-lg font-extrabold text-white">
@@ -70,7 +70,7 @@ const Footer = () => {
             </a>
             
             <p className="text-neutral-400 text-sm max-w-sm font-light leading-relaxed">
-              Built for Growth. Designed for Impact. We engineer high-performance web applications and SaaS platforms for startup founders worldwide.
+              Modern Websites Built with Passion and Precision. We design and build fast, responsive websites that help businesses establish a strong online presence.
             </p>
 
             <div className="mt-4 text-xs font-semibold text-neutral-500">
@@ -84,12 +84,12 @@ const Footer = () => {
               Services
             </h4>
             <ul className="space-y-2 text-xs font-medium text-neutral-400">
-              <li><a href="#services" onClick={(e) => handleScrollTo(e, 'services')} className="hover:text-[#06B6D4] transition-colors">Custom Web Apps</a></li>
-              <li><a href="#services" onClick={(e) => handleScrollTo(e, 'services')} className="hover:text-[#06B6D4] transition-colors">SaaS Development</a></li>
-              <li><a href="#services" onClick={(e) => handleScrollTo(e, 'services')} className="hover:text-[#06B6D4] transition-colors">FastAPI Backend APIs</a></li>
-              <li><a href="#services" onClick={(e) => handleScrollTo(e, 'services')} className="hover:text-[#06B6D4] transition-colors">React Frontend Core</a></li>
-              <li><a href="#services" onClick={(e) => handleScrollTo(e, 'services')} className="hover:text-[#06B6D4] transition-colors">Dashboard Development</a></li>
-              <li><a href="#services" onClick={(e) => handleScrollTo(e, 'services')} className="hover:text-[#06B6D4] transition-colors">Business Automation</a></li>
+              <li><a href="#services" onClick={(e) => handleScrollTo(e, 'services')} className="hover:text-[#06B6D4] transition-colors">Full Stack Web Apps</a></li>
+              <li><a href="#services" onClick={(e) => handleScrollTo(e, 'services')} className="hover:text-[#06B6D4] transition-colors">Landing Pages & Business Websites</a></li>
+              <li><a href="#services" onClick={(e) => handleScrollTo(e, 'services')} className="hover:text-[#06B6D4] transition-colors">FastAPI Backend & APIs</a></li>
+              <li><a href="#services" onClick={(e) => handleScrollTo(e, 'services')} className="hover:text-[#06B6D4] transition-colors">React.js Frontend Development</a></li>
+              <li><a href="#services" onClick={(e) => handleScrollTo(e, 'services')} className="hover:text-[#06B6D4] transition-colors">Dashboard & Admin Panels</a></li>
+              <li><a href="#services" onClick={(e) => handleScrollTo(e, 'services')} className="hover:text-[#06B6D4] transition-colors">Website Maintenance & UI Improvements</a></li>
             </ul>
           </div>
 
@@ -100,10 +100,10 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2 text-xs font-medium text-neutral-400">
               <li><a href="#home" onClick={(e) => handleScrollTo(e, 'home')} className="hover:text-[#06B6D4] transition-colors">Home</a></li>
-              <li><a href="#about" onClick={(e) => handleScrollTo(e, 'about')} className="hover:text-[#06B6D4] transition-colors">About Story</a></li>
-              <li><a href="#portfolio" onClick={(e) => handleScrollTo(e, 'portfolio')} className="hover:text-[#06B6D4] transition-colors">Selected Projects</a></li>
-              <li><a href="#process" onClick={(e) => handleScrollTo(e, 'process')} className="hover:text-[#06B6D4] transition-colors">Process Timeline</a></li>
-              <li><a href="#testimonials" onClick={(e) => handleScrollTo(e, 'testimonials')} className="hover:text-[#06B6D4] transition-colors">Testimonials</a></li>
+              <li><a href="#about" onClick={(e) => handleScrollTo(e, 'about')} className="hover:text-[#06B6D4] transition-colors">About Us</a></li>
+              <li><a href="#portfolio" onClick={(e) => handleScrollTo(e, 'portfolio')} className="hover:text-[#06B6D4] transition-colors">Featured Projects</a></li>
+              <li><a href="#process" onClick={(e) => handleScrollTo(e, 'process')} className="hover:text-[#06B6D4] transition-colors">Process Blueprint</a></li>
+              <li><a href="#testimonials" onClick={(e) => handleScrollTo(e, 'testimonials')} className="hover:text-[#06B6D4] transition-colors">Why Us</a></li>
               <li><a href="#contact" onClick={(e) => handleScrollTo(e, 'contact')} className="hover:text-[#06B6D4] transition-colors">Contact Form</a></li>
             </ul>
           </div>
@@ -143,8 +143,8 @@ const Footer = () => {
             © {new Date().getFullYear()} DesignLoop Ltd. All rights reserved.
           </div>
           
-          <div className="flex items-center gap-1">
-            Engineered with <Heart className="h-3 w-3 text-red-500 fill-current animate-pulse" /> for elite digital scaling.
+          <div className="flex items-center gap-1.5">
+            Designed and developed with passion using modern web technologies.
           </div>
         </div>
 

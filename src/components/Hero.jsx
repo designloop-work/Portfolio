@@ -87,7 +87,7 @@ const Hero = () => {
         >
           <span className="flex h-2 w-2 rounded-full bg-[#06B6D4]"></span>
           <span className="text-xs font-semibold uppercase tracking-wider text-neutral-300">
-            Next-Gen Digital Craftsmanship
+            Web Development Studio
           </span>
         </motion.div>
 
@@ -99,8 +99,8 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-white max-w-5xl leading-tight sm:leading-none"
         >
-          Built for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7C3AED] to-[#a78bfa]">Growth.</span><br />
-          Designed for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#06B6D4] to-[#67e8f9]">Impact.</span>
+          Built with <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7C3AED] to-[#a78bfa]">Passion.</span><br />
+          Designed with <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#06B6D4] to-[#67e8f9]">Precision.</span>
         </motion.h1>
 
         {/* Agency Intro Description */}
@@ -111,7 +111,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mt-8 text-lg sm:text-xl text-neutral-400 max-w-2xl font-light leading-relaxed"
         >
-          We engineer high-performance web applications, bespoke SaaS platforms, and premium digital solutions that scale businesses, delight users, and dominate industries.
+          We design and build fast, responsive websites that help businesses establish a strong online presence.
         </motion.p>
 
         {/* Interactive Features Badges */}
@@ -122,13 +122,13 @@ const Hero = () => {
           className="mt-8 flex flex-wrap justify-center gap-y-2 gap-x-6 text-sm text-neutral-400 font-medium"
         >
           <span className="flex items-center gap-1.5">
-            <CheckCircle2 className="h-4 w-4 text-[#06B6D4]" /> Top 1% React & Node Engineers
+            <CheckCircle2 className="h-4 w-4 text-[#06B6D4]" /> Clean & Modern UI
           </span>
           <span className="flex items-center gap-1.5">
-            <CheckCircle2 className="h-4 w-4 text-[#7C3AED]" /> Scalable Cloud Architecture
+            <CheckCircle2 className="h-4 w-4 text-[#7C3AED]" /> Mobile Responsive
           </span>
           <span className="flex items-center gap-1.5">
-            <CheckCircle2 className="h-4 w-4 text-[#06B6D4]" /> Premium Interactive Design
+            <CheckCircle2 className="h-4 w-4 text-[#06B6D4]" /> SEO-Friendly Development
           </span>
         </motion.div>
 
@@ -146,7 +146,7 @@ const Hero = () => {
           >
             <span className="absolute inset-0 bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] rounded-full"></span>
             <div className="relative px-8 py-4 bg-[#0B0B0B] rounded-full transition-colors group-hover:bg-[#0B0B0B]/85 flex items-center justify-center gap-2">
-              Explore Our Work
+              View Projects
               <ArrowDown className="h-4 w-4 text-[#06B6D4] transition-transform duration-300 group-hover:translate-y-0.5" />
             </div>
           </button>
@@ -156,7 +156,7 @@ const Hero = () => {
             onClick={() => handleScrollTo('contact')}
             className="w-full sm:w-auto relative group overflow-hidden rounded-full border border-white/10 px-8 py-4 font-semibold text-neutral-300 bg-white/5 hover:text-white hover:bg-white/10 transition-all active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
           >
-            Book Strategy Call
+            Let's Talk
             <ArrowUpRight className="h-4 w-4 text-white/60 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </button>
         </motion.div>

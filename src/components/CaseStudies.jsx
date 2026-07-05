@@ -17,13 +17,13 @@ const CaseStudies = ({ selectedId, setSelectedId }) => {
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-widest text-[#06B6D4] mb-3">
-            In-Depth Analysis
+            Project Breakdown
           </div>
           <h2 className="font-heading text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
             Case Studies
           </h2>
           <p className="mt-4 text-neutral-400 font-light leading-relaxed">
-            A deep dive into how we resolve engineering bottlenecks, optimize workflows, and drive compound growth for our client portfolio.
+            A closer look at how we approached building these projects, the technologies we chose, and what we learned along the way.
           </p>
         </div>
 
@@ -118,7 +118,7 @@ const CaseStudies = ({ selectedId, setSelectedId }) => {
                 {/* Results Metrics */}
                 <div>
                   <h4 className="font-heading text-xs font-bold text-neutral-500 uppercase tracking-widest mb-4">
-                    Quantifiable Impact
+                    Technical Highlights
                   </h4>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     {activeData.metrics.map((metric) => (

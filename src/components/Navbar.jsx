@@ -14,7 +14,7 @@ const Navbar = () => {
     { name: 'Services', href: '#services' },
     { name: 'Projects', href: '#portfolio' },
     { name: 'Process', href: '#process' },
-    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'Why Us', href: '#testimonials' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -78,7 +78,7 @@ const Navbar = () => {
             <img 
               src={logoImg} 
               alt="DesignLoop Logo" 
-              className="absolute h-[200%] w-[200%] max-w-none object-cover object-[center_25%]"
+              className="h-full w-full object-cover"
             />
           </div>
           <span className="font-heading text-xl font-extrabold tracking-tight text-white transition-colors group-hover:text-white">
@@ -119,7 +119,7 @@ const Navbar = () => {
             <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] opacity-90 transition-all duration-300 group-hover:opacity-100"></span>
             <span className="absolute -inset-px rounded-full bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] opacity-0 group-hover:opacity-50 blur-md transition-all duration-300"></span>
             <span className="relative flex items-center gap-1.5">
-              Book a Call
+              Let's Talk
               <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </span>
           </a>
@@ -166,7 +166,7 @@ const Navbar = () => {
                 onClick={(e) => handleLinkClick(e, '#contact')}
                 className="w-full flex items-center justify-center gap-2 py-3.5 rounded-full text-center text-sm font-semibold text-white bg-gradient-to-r from-[#7C3AED] to-[#06B6D4]"
               >
-                Book a Call
+                Let's Talk
                 <ArrowUpRight className="h-4 w-4" />
               </a>
             </div>

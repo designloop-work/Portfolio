@@ -8,7 +8,7 @@ const Contact = () => {
     name: '',
     email: '',
     company: '',
-    budget: '$10k - $25k',
+    budget: '$2k - $5k',
     details: ''
   });
 
@@ -17,10 +17,10 @@ const Contact = () => {
   const [errorMsg, setErrorMsg] = useState('');
 
   const budgets = [
+    { label: "Under $2k", value: "Under $2k" },
+    { label: "$2k - $5k", value: "$2k - $5k" },
     { label: "$5k - $10k", value: "$5k - $10k" },
-    { label: "$10k - $25k", value: "$10k - $25k" },
-    { label: "$25k - $50k", value: "$25k - $50k" },
-    { label: "$50k+", value: "$50k+" }
+    { label: "$10k+", value: "$10k+" }
   ];
 
   const handleInputChange = (e) => {
@@ -110,11 +110,11 @@ const Contact = () => {
             </div>
             
             <h2 className="font-heading text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
-              Let's build something legacy.
+              Whether it's your first website or a redesign, let's build something together.
             </h2>
             
             <p className="mt-6 text-neutral-400 text-base leading-relaxed font-light">
-              Ready to scale your business with custom frontend/backend architectures? Fill out our strategy intake form, and one of our managing partners will review your scope and follow up within 4 hours.
+              Tell us about your project requirements, goals, and timeline. Fill out our simple form, and we'll get back to you within 24 hours to discuss how we can help.
             </p>
 
             {/* Support benefits */}
@@ -123,19 +123,19 @@ const Contact = () => {
                 <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#7C3AED]/10 text-[#7C3AED]">
                   <ShieldCheck className="h-4 w-4" />
                 </span>
-                NDA protected client data
+                Direct communication with the developers
               </div>
               <div className="flex items-center gap-3 text-sm font-medium text-neutral-300">
                 <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#06B6D4]/10 text-[#06B6D4]">
                   <Mail className="h-4 w-4" />
                 </span>
-                Direct managing engineer callback
+                Clear, honest scoping and estimates
               </div>
               <div className="flex items-center gap-3 text-sm font-medium text-neutral-300">
                 <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#7C3AED]/10 text-[#7C3AED]">
                   <Building2 className="h-4 w-4" />
                 </span>
-                Flexible project scaling models
+                Collaborative design and build process
               </div>
             </div>
 
@@ -267,11 +267,11 @@ const Contact = () => {
                         {isSubmitting ? (
                           <>
                             <span className="animate-spin h-4 w-4 border-2 border-white border-t-transparent rounded-full" />
-                            Submitting Request...
+                            Sending Message...
                           </>
                         ) : (
                           <>
-                            Submit Strategy Request
+                            Send Message
                             <Send className="h-4 w-4 text-white/80 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                           </>
                         )}
@@ -295,7 +295,7 @@ const Contact = () => {
                     </h3>
                     
                     <p className="text-neutral-400 text-sm max-w-sm mx-auto leading-relaxed font-light mb-8">
-                      Thank you for contacting DesignLoop. We have logged your project budget of <span className="text-white font-bold">{formState.budget}</span>. A managing engineer will follow up via email within 4 hours.
+                      Thank you for reaching out! We've received your message and will get back to you via email within 24 hours to discuss your project.
                     </p>
 
                     <button

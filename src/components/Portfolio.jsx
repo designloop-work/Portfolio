@@ -41,13 +41,13 @@ const Portfolio = ({ onSelectCaseStudy }) => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-widest text-[#7C3AED] mb-3">
-              Case Studies & Works
+              Featured Projects
             </div>
             <h2 className="font-heading text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
-              Selected Showcase
+              Projects We've Built
             </h2>
             <p className="mt-4 text-neutral-400 font-light leading-relaxed">
-              Explore a curated selection of our high-performing platforms. Each card represents a production-grade application engineered for commercial scale.
+              Here are some of the web applications and sites we have built. We focus on clean structure, functionality, and performance.
             </p>
           </div>
         </div>

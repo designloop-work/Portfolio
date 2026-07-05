@@ -56,7 +56,7 @@ const LoadingScreen = ({ onComplete }) => {
               <img 
                 src={logoImg} 
                 alt="DesignLoop Logo" 
-                className="h-[200%] w-[200%] max-w-none object-cover object-[center_25%]"
+                className="h-full w-full object-cover"
               />
             </div>
             {/* Soft Ambient Glow */}

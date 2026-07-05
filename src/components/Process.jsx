@@ -6,44 +6,44 @@ const Process = () => {
     {
       num: "01",
       icon: <Search className="h-5 w-5 text-[#7C3AED]" />,
-      title: "Discovery & Strategy",
-      description: "We dive deep into your commercial goals, user cohorts, and competitive landscape. We map requirements, define tech stacks, and establish clear scopes."
+      title: "Discover",
+      description: "We talk with you to understand your idea, target audience, and business goals. This helps us ensure we build exactly what you need."
     },
     {
       num: "02",
       icon: <Compass className="h-5 w-5 text-[#06B6D4]" />,
-      title: "Product Architecture",
-      description: "We outline database models, API contract endpoints, and layout user maps. The goal is to construct a structural blueprint before coding starts."
+      title: "Plan",
+      description: "We map out the website's structure, choose the right technologies, and create a clear project timeline with milestones."
     },
     {
       num: "03",
       icon: <PenTool className="h-5 w-5 text-[#7C3AED]" />,
-      title: "UI/UX Design Loop",
-      description: "Our designers craft high-fidelity responsive layouts in Figma. We establish clean styleguides, cohesive colors, and subtle micro-interaction models."
+      title: "Design",
+      description: "We create clean, user-friendly layouts in Figma so you can see how your website will look and feel before we start coding."
     },
     {
       num: "04",
       icon: <Code className="h-5 w-5 text-[#06B6D4]" />,
-      title: "Agile Engineering",
-      description: "We build. Developers write clean, modular React frontend interfaces and secure FastAPI backends, integrating database schemas in rapid sprints."
+      title: "Develop",
+      description: "We write clean, efficient code using modern technologies like React.js and FastAPI to build your website's frontend and backend."
     },
     {
       num: "05",
       icon: <ShieldCheck className="h-5 w-5 text-[#7C3AED]" />,
-      title: "Rigorous QA Testing",
-      description: "We test code under pressure. We audit security protocols, verify core web vitals speed, run end-to-end user tests, and check API throughput limits."
+      title: "Test",
+      description: "We test every button, link, and form to ensure everything works smoothly across different browsers, mobile devices, and screen sizes."
     },
     {
       num: "06",
       icon: <CheckSquare className="h-5 w-5 text-[#06B6D4]" />,
-      title: "Secure CI/CD Deployment",
-      description: "We deploy systems to AWS or Google Cloud via automated workflows. We configure database backup schemas, cache policies, and error log monitors."
+      title: "Launch",
+      description: "We set up hosting, configure domain names, and deploy your new website so it's live and accessible to your visitors."
     },
     {
       num: "07",
       icon: <LifeBuoy className="h-5 w-5 text-[#7C3AED]" />,
-      title: "Compound Optimization",
-      description: "We stay on guard. Post-launch support includes rapid bug remediation, code optimizations, and continuous feature expansion sprints."
+      title: "Support",
+      description: "We don't just disappear after launch. We stay available to fix bugs, make updates, and help keep your website running smoothly."
     }
   ];
 
@@ -62,7 +62,7 @@ const Process = () => {
             Our Development Blueprint
           </h2>
           <p className="mt-4 text-neutral-400 text-lg leading-relaxed font-light">
-            We employ a disciplined, transparent execution cycle that keeps stakeholders informed and projects strictly on-schedule.
+            We use a simple, collaborative workflow to take your idea from concept to a fully functioning website.
           </p>
         </div>
 

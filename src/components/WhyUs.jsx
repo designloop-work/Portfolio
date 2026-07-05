@@ -4,24 +4,24 @@ import { ShieldAlert, ShieldCheck } from 'lucide-react';
 const WhyUs = () => {
   const comparisonData = [
     {
-      metric: "Engineering Rigor",
-      us: "TypeScript, strict typing, linting checks, automated Cypress/Jest testing, custom hooks.",
-      them: "Quick template copies, manual CSS styles, zero unit tests, hardcoded database credentials."
+      metric: "Clean Code",
+      us: "We write structured React and FastAPI code, check for errors with linters, and design reusable components.",
+      them: "Unorganized template modifications, inline styles, and redundant code that is hard to maintain."
     },
     {
-      metric: "Deployment Pipeline",
-      us: "CI/CD automated docker builds, isolated staging clusters, database fallback systems.",
-      them: "Manual FTP transfers, lack of version control, live testing directly in production."
+      metric: "Modern Technologies",
+      us: "We use modern, fast, and secure frameworks like React.js, Tailwind CSS, and FastAPI.",
+      them: "Outdated page builders or heavy plugins that slow down page loading times."
     },
     {
-      metric: "Execution Logic",
-      us: "High-ticket business orientation. We audit conversion paths, search metrics, and user logs.",
-      them: "Feature-factory builders. They write what is listed on paper without verifying business goals."
+      metric: "Attention to Detail",
+      us: "Every element, button, and image is double-checked for pixel-perfect alignment and smooth animations.",
+      them: "Misaligned layout grids, non-responsive components, and broken links left unfixed."
     },
     {
-      metric: "Communications Loop",
-      us: "Integrated Slack boards, transparent Notion/Jira trackers, weekly async loom updates.",
-      them: "Ghosting for weeks, emails that fall through, disorganized lists, and sudden delays."
+      metric: "Clear Communication",
+      us: "Direct communication with the actual developers. We provide regular, transparent updates.",
+      them: "Getting passed around account managers, slow email response times, or unexpected delays."
     }
   ];
 
@@ -32,13 +32,13 @@ const WhyUs = () => {
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-widest text-[#06B6D4] mb-3">
-            Why DesignLoop
+            Why Us
           </div>
           <h2 className="font-heading text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
-            The Elite Agency Standard
+            How We Approach Development
           </h2>
           <p className="mt-4 text-neutral-400 font-light leading-relaxed">
-            High-ticket clients hire us because we don't just build websites; we design digital leverage. Here is how we differ from the status quo.
+            We focus on building reliable, performant websites using clean code and modern technologies. Here is how we work compared to traditional template agencies.
           </p>
         </div>
 
